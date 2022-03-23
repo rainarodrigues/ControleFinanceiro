@@ -1,25 +1,26 @@
 
 func menssageMenu(){
-    print("Menu Principal:\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Saldos\n5 - Metas\n")
-    print("Digite uma opção:")
+    print("------------------------------")
+    print("-------Menu Principal ---------")
+    print("------------------------------")
+    print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Saldos\n5 - Metas\n")
+    print("Digite o numero para acessar o menu: ")
 }
 
 menssageMenu()
-
-let optionMenu : Int = Int(readLine()!)!
+var optionMenu = verificarIntMenu()
 
 switch optionMenu {
-    case 0:
-        print("Saldo Inicial")
     case 1:
-        print("Receitas")
+        saldoInicial()
     case 2:
-        print("Despesas")
+        print("Receitas")
     case 3:
-        print("Saldos")
+        print("Despesas")
     case 4:
+        print("Saldos")
+    case 5:
         print("Meta")
     default:
         print("Sair")
 }
-
