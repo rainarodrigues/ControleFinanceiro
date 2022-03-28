@@ -14,14 +14,17 @@ while(true){
         case 3:
             sistema.despesas()
         case 4:
-            print("Metas")
+            sistema.metasAtrituida()
         case 5:
-//            sistema.imprimirReceitas()
-//            sistema.imprimirSaldo()
+            sistema.saldoPrint()
+            sistema.imprimirMeta()
+            sistema.telaPrint()
+            sistema.imprimirReceitas()
+            sistema.imprimirSaldo()
             sistema.calculoReceitas()
             sistema.calculoDespesas()
         default:
-            print("Sair")
+            print("Programa encerrado!!")
             break
     }
 }

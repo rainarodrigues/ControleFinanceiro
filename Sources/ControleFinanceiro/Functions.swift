@@ -15,6 +15,11 @@ class Sistema {
         print("----------------------------------------------")
     }
     
+    func saldoPrint(){
+        print("\n \n--------------------------------------------")
+        print("----------  Saldo do Controle Finaceiro  --------")
+        print("----------------------------------------------")
+    }
     func menssageMenu(){
 
         print("\n \n------------------------------")
@@ -67,9 +72,7 @@ class Sistema {
     }
     
     func imprimirSaldo() {
-        print("\n----------------------------")
-        print("----- Saldo Inicial : ------")
-        print(saldo)
+        print("Saldo inicial :\(saldo)")
     }
 
     //Receitas
@@ -104,7 +107,6 @@ class Sistema {
                 print("Digite o valor da receita: ")
                 var saldoInputReceita = verificarDouble()
                 saldoReceitas.append(saldoInputReceita)
-                
                 //count += 1
                 print("\n")
             }
@@ -173,10 +175,9 @@ class Sistema {
         }
         
     }
-    
+    var aux = 0
+    var totalDespesas = 0.0
     func calculoDespesas(){
-        var aux = 0
-        var totalDespesas = 0.0
         while aux != saldoDespesas.endIndex{
             totalDespesas = totalDespesas + saldoDespesas[aux]
             aux += 1
@@ -184,6 +185,32 @@ class Sistema {
         print("\nTotal de Despesas: \(totalDespesas)")
         
     }
+    
+    func ImprimirDespesas(){
+        print("\nTotal de Despesas: \(totalDespesas)")
+    }
+    
+    var meta = 0.0
+    func metasAtrituida(){
+        telaPrint()
+        print("Digite o valor da sua meta: ")
+        let inputMeta = verificarDouble()
+        
+        meta = inputMeta
+        print("Meta inserida foi: \(meta)")
+        print("\n")
+    }
+    
+    func imprimirMeta(){
+        print("Valor da meta: \(meta)")
+    }
+    
+//    func saldoFinal(){
+//        var finalReceitas = calculoReceitas()
+//        var finalDespesas = calculoDespesas()
+//        var
+//
+//    }
 }
 
 
