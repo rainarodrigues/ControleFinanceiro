@@ -1,30 +1,25 @@
 
-func menssageMenu(){
-    print("------------------------------")
-    print("------ Menu Principal --------")
-    print("------------------------------")
-    print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Saldos\n5 - Metas\n")
-    print("Digite o numero para acessar o menu: ")
-}
 
+let sistema = Sistema()
 
 
 while(true){
-    menssageMenu()
-    var optionMenu = verificarIntMenu()
+    sistema.menssageMenu()
+    var optionMenu = sistema.verificarIntMenu()
     switch optionMenu {
         case 1:
-            saldoInicial()
+            sistema.saldoInicial()
         case 2:
-            receitas()
+            sistema.receitas()
         case 3:
-            despesas()
+            sistema.despesas()
         case 4:
-            print("Saldos")
+            print("Metas")
         case 5:
-            print("Meta")
+            sistema.imprimirReceitas()
         default:
             print("Sair")
             break
     }
 }
+
