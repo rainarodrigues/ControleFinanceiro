@@ -16,7 +16,10 @@ while(true){
         case 4:
             print("Metas")
         case 5:
-            sistema.imprimirReceitas()
+//            sistema.imprimirReceitas()
+//            sistema.imprimirSaldo()
+            sistema.calculoReceitas()
+            sistema.calculoDespesas()
         default:
             print("Sair")
             break

@@ -10,15 +10,14 @@ import Foundation
 class Sistema {
     
     func telaPrint(){
-        print("\n \n \n \n \n \n \n \n \n \n \n \n")
-        print("\n--------------------------------------------")
+        print("\n \n--------------------------------------------")
         print("------------  Controle Financeiro  ----------")
         print("----------------------------------------------")
     }
     
     func menssageMenu(){
-        print("\n")
-        print("------------------------------")
+
+        print("\n \n------------------------------")
         print("------ Menu Principal --------")
         print("------------------------------")
         print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Metas\n5 - Saldos\n")
@@ -59,23 +58,18 @@ class Sistema {
     
     func saldoInicial() {
         telaPrint()
-        while(true){
-            print("Digite o saldo inicial: ")
+        print("Digite o saldo inicial: ")
+        let saldoInicial = verificarDouble()
         
-            let saldoInicial = verificarDouble()
-        
-            print("saldo inicial: \(saldoInicial)")
-        
-            
-            saldo = saldoInicial
-            
-            print("\n")
-        }
-
+        saldo = saldoInicial
+        print("saldo inicial inserido foi: \(saldoInicial)")
+        print("\n")
     }
     
     func imprimirSaldo() {
-        print("O saldo é: \(saldo)")
+        print("\n----------------------------")
+        print("----- Saldo Inicial : ------")
+        print(saldo)
     }
 
     //Receitas
@@ -87,26 +81,26 @@ class Sistema {
     func receitas(){
         
         while(true){
-            print("\n \n \n \n \n \n \n \n \n \n \n \n")
-            print("\n \n \n \n \n \n \n \n \n \n \n \n")
-            print(" ----------------------------------- \nVocê quer adicionar uma receita? \n Digite 1 para SIM e 2 para Não ")
+            print("\n\n-----------------------------------")
+            print("Você quer adicionar uma despesa?")
+            print("Digite 1 para SIM e 2 para NÃO : ")
+            print("-----------------------------------")
             let inputResposta = readLine()
             resposta = String(inputResposta!)
             
             if(resposta != "1" && resposta != "2"){
-                print("\n \n \n \n \n \n \n \n \n \n \n \n")
-                print("\n \n \n \n \n \n \n \n \n \n \n \n")
                 print("----------------------------------- \nVocê não digitou 1 nem 2.")
             
             }else if (resposta == "2"){
                 break
             }else{
                 telaPrint()
-
+                print("\n\n-----------------------------------")
                 print("Digite o nome da receita: ")
                 var nomeInputReceita = readLine()
                 nomeReceita.append(nomeInputReceita!)
                 
+                print("\n\n-----------------------------------")
                 print("Digite o valor da receita: ")
                 var saldoInputReceita = verificarDouble()
                 saldoReceitas.append(saldoInputReceita)
@@ -119,13 +113,23 @@ class Sistema {
         
     }
     
-    func imprimirReceitas(){
-        print("--------------------------------")
-        print("----- Total de Receitas : ------")
-        print("--------------------------------")
-        for 
-        print(" \(nomeReceita) : \(saldoReceitas)")
+    func calculoReceitas(){
+        var aux = 0
+        var totalReceitas = 0.0
+        while aux != saldoReceitas.endIndex{
+            totalReceitas = totalReceitas + saldoReceitas[aux]
+            aux += 1
+        }
+        print("\nTotal de Receitas: \(totalReceitas)")
         
+    }
+    
+    func imprimirReceitas(){
+        print("\n----------------------------")
+        print("----- Receitas : ------")
+        for (nomeReceita, saldoReceitas) in zip(nomeReceita, saldoReceitas) {
+            print("\(nomeReceita) : \(saldoReceitas)")
+        }
     }
     
     //Despesas
@@ -137,7 +141,7 @@ class Sistema {
     func despesas(){
 
         while(true){
-            print("\n-----------------------------------")
+            print("\n\n-----------------------------------")
             print("Você quer adicionar uma despesa?")
             print("Digite 1 para SIM e 2 para NÃO : ")
             print("-----------------------------------")
@@ -146,29 +150,38 @@ class Sistema {
             
             
             if(respostaDespesas != "1" && respostaDespesas != "2"){
-                print("----------------------------------- \nVocê não digitou 1 nem 2.")
+                print("\n\n----------------------------------- \nVocê não digitou 1 nem 2.")
             
             }else if (respostaDespesas == "2"){
                 break
             }else{
                 telaPrint()
-
+                print("\n\n-----------------------------------")
                 print("Digite o nome da despesa: ")
                 var nomeInputDespesas = readLine()
                 nomeDespesas.append(nomeInputDespesas!)
                 
+                print("\n\n-----------------------------------")
                 print("Digite o valor da despesa: ")
                 var saldoInputDespesas = verificarDouble()
                 saldoDespesas.append(saldoInputDespesas)
                 
                 //countDespesas += 1
                 print("\n")
-                
-                print(nomeDespesas)
-                print(saldoDespesas)
             }
             
         }
+        
+    }
+    
+    func calculoDespesas(){
+        var aux = 0
+        var totalDespesas = 0.0
+        while aux != saldoDespesas.endIndex{
+            totalDespesas = totalDespesas + saldoDespesas[aux]
+            aux += 1
+        }
+        print("\nTotal de Despesas: \(totalDespesas)")
         
     }
 }
