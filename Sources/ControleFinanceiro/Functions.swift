@@ -1,26 +1,24 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Raina Rodrigues de Lima on 22/03/22.
 //
 
 import Foundation
 
-func saldoInicial(){
+//struct calculos(){
+//
+//
+//}
+
+
+
+func telaPrint(){
     print("--------------------------------------------")
     print("---------  Controle Financeiro  --------- \n")
     print("--------------------------------------------")
-    
-    print("Digite o saldo inicial: ")
-    
-    let saldoInicial = verificarDouble()
-    
-    print("saldo inicial: \(saldoInicial)")
-    
-    print("\n")
 }
-
 
 func verificarIntMenu() -> Int {
     var teste = readLine()
@@ -52,7 +50,60 @@ func verificarDouble() -> Double {
 }
 
 
+func saldoInicial(){
+    telaPrint()
+    
+    while(true){
+        print("Digite o saldo inicial: ")
+    
+        let saldoInicial = verificarDouble()
+    
+        print("saldo inicial: \(saldoInicial)")
+    
+        print("\n")
+    }
+    return
 
+}
+
+func receitas(){
+    var nomeReceita: [String] = []
+    var saldoReceitas: [Double] = []
+    var resposta : String?
+    var count = 0
+
+    while(true){
+        print(" ----------------------------------- \nVocê quer adicionar uma receita? \n Digite 1 para SIM e 2 para Não ")
+        let inputResposta = readLine()
+        resposta = String(inputResposta!)
+        print("Você digitou: \(inputResposta)")
+        print(type(of: resposta))
+        
+        if(resposta != "1" && resposta != "2"){
+            print("----------------------------------- \nVocê não digitou 1 nem 2.")
+        
+        }else if (resposta == "2"){
+            break
+        }else{
+            telaPrint()
+
+            print("Digite o nome da receita: ")
+            var nomeInputReceita = readLine()
+            nomeReceita.append(nomeInputReceita!)
+            
+            print("Digite o valor da receita: ")
+            var saldoInputReceita = verificarDouble()
+            saldoReceitas.append(saldoInputReceita)
+            
+            //count += 1
+            print("\n")
+            print(nomeReceita)
+            print(saldoReceitas)
+        }
+        
+    }
+    
+}
 
 
 

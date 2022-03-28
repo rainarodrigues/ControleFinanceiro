@@ -7,20 +7,24 @@ func menssageMenu(){
     print("Digite o numero para acessar o menu: ")
 }
 
-menssageMenu()
-var optionMenu = verificarIntMenu()
 
-switch optionMenu {
-    case 1:
-        saldoInicial()
-    case 2:
-        print("Receitas")
-    case 3:
-        print("Despesas")
-    case 4:
-        print("Saldos")
-    case 5:
-        print("Meta")
-    default:
-        print("Sair")
+
+while(true){
+    menssageMenu()
+    var optionMenu = verificarIntMenu()
+    switch optionMenu {
+        case 1:
+            saldoInicial()
+        case 2:
+            receitas()
+        case 3:
+            print("Despesas")
+        case 4:
+            print("Saldos")
+        case 5:
+            print("Meta")
+        default:
+            print("Sair")
+            break
+    }
 }
