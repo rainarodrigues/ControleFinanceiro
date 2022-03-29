@@ -1,3 +1,4 @@
+import Darwin
 
 
 let sistema = Sistema()
@@ -47,6 +48,7 @@ while(true){
             print("\n ◆ Total de Despesas : \(sistema.saldoTotalDespesas())")
             print("\n ◆ Saldo Final : \(sistema.imprimirSaldoFinal())")
             sistema.imprimirMeta()
+            sleep(3)
         case 6:
             sistema.finalizarSistema()
         default:
