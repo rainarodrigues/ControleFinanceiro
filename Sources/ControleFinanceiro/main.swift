@@ -17,12 +17,15 @@ while(true){
             sistema.metasAtrituida()
         case 5:
             sistema.saldoPrint()
-            sistema.imprimirMeta()
-            sistema.telaPrint()
-            sistema.imprimirReceitas()
-            sistema.imprimirSaldo()
-            sistema.calculoReceitas()
-            sistema.calculoDespesas()
+//            sistema.imprimirMeta()
+//            sistema.telaPrint()
+//            sistema.imprimirReceitas()
+//            sistema.imprimirSaldo()
+//            sistema.calculoReceitas()
+//            sistema.calculoDespesas()
+//            sistema.saldoFinal()
+        case 6:
+            sistema.finalizarSistema()
         default:
             print("Programa encerrado!!")
             break

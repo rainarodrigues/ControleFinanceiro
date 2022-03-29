@@ -25,15 +25,15 @@ class Sistema {
         print("\n \n------------------------------")
         print("------ Menu Principal --------")
         print("------------------------------")
-        print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Metas\n5 - Saldos\n")
+        print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Metas\n5 - Saldos\n6 - Finalizar Sistema")
         print("Digite o numero para acessar o menu: ")
     }
 
     func verificarIntMenu() -> Int {
         var teste = readLine()
         while true {
-            if (Int(teste!) == nil) || (Int(teste!)! >= 6) || (Int(teste!)! <= 0) {
-                print ("Valor invalido, digite de 1 a 5 pra acessar o valor de opcão: \n")
+            if (Int(teste!) == nil) || (Int(teste!)! >= 7) || (Int(teste!)! <= 0) {
+                print ("Valor invalido, digite de 1 a 6 pra acessar o valor de opcão: \n")
                 teste = readLine()
             }else{
                 break
@@ -114,13 +114,12 @@ class Sistema {
         }
         
     }
-    
+    var auxReceitas = 0
+    var totalReceitas = 0.0
     func calculoReceitas(){
-        var aux = 0
-        var totalReceitas = 0.0
-        while aux != saldoReceitas.endIndex{
-            totalReceitas = totalReceitas + saldoReceitas[aux]
-            aux += 1
+        while auxReceitas != saldoReceitas.endIndex{
+            totalReceitas = totalReceitas + saldoReceitas[auxReceitas]
+            auxReceitas += 1
         }
         print("\nTotal de Receitas: \(totalReceitas)")
         
@@ -170,20 +169,20 @@ class Sistema {
                 
                 //countDespesas += 1
                 print("\n")
+                
             }
             
         }
         
     }
-    var aux = 0
+    var auxDespesas = 0
     var totalDespesas = 0.0
     func calculoDespesas(){
-        while aux != saldoDespesas.endIndex{
-            totalDespesas = totalDespesas + saldoDespesas[aux]
-            aux += 1
+        while auxDespesas != saldoDespesas.endIndex{
+            totalDespesas = totalDespesas + saldoDespesas[auxDespesas]
+            auxDespesas += 1
         }
         print("\nTotal de Despesas: \(totalDespesas)")
-        
     }
     
     func ImprimirDespesas(){
@@ -201,15 +200,23 @@ class Sistema {
         print("\n")
     }
     
-    func imprimirMeta(){
-        print("Valor da meta: \(meta)")
+//    func imprimirMeta(){
+//        if(meta >= ){
+//
+//        }else{
+//
+//        }
+//    }
+    
+    func finalizarSistema(){
+        print("\nSistema Finalizado!\n")
+        exit(0)
     }
     
 //    func saldoFinal(){
-//        var finalReceitas = calculoReceitas()
-//        var finalDespesas = calculoDespesas()
-//        var
-//
+//        let calculoSaldoFinal
+//        print(calculoSaldoFinal)
+//        print("teste")
 //    }
 }
 
