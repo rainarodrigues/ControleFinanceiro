@@ -7,7 +7,7 @@
  
 <!--Tabela de conteúdos-->
 <!--=================-->
-<!--<!--ts-->-->
+<!--<!--ts-->
 <!--   * [Sobre](# ControleFinanceiro)-->
 <!--   * [Tabela de Conteudo](#tabela-de-conteudo)-->
 <!--   * [Instalação](#instalacao)-->
