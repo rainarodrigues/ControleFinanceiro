@@ -2,7 +2,7 @@
 
 <p align="center">Controle Financeiro é um projeto que tem a finalidade de calcular todas as receitas, despesas e saldo final de uma pessoa. Retorna uma meta alcançavél ou nâo. </p>
 
-<p aling="center">Para pessoas que desezam saber qual foi o saldo final de sua renda finceira e deseja saber se a meta foi ecedida ou não. </p>
+<p aling="center">Para pessoas que deseja saber qual foi o saldo final de sua renda finceira e assim saber se a meta foi uma meta alcançada ou não. </p>
  
  
 <!--Tabela de conteúdos-->
