@@ -21,10 +21,11 @@ class Sistema {
         print("----------------------------------------------")
     }
     func menssageMenu(){
-
-        print("\n \n------------------------------")
-        print("------ Menu Principal --------")
-        print("------------------------------")
+        print("---------------------------------------------")
+        print("------------  Controle Financeiro   ----------")
+        print("---------------------------------------------")
+        print(" ▶︎ Menu Principal")
+        print("---------------------------------------------")
         print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Metas\n5 - Saldos\n6 - Finalizar Sistema")
         print("Digite o numero para acessar o menu: ")
     }
@@ -116,12 +117,13 @@ class Sistema {
     }
     var auxReceitas = 0
     var totalReceitas = 0.0
-    func calculoReceitas(){
+    func saldoTotalReceitas() -> Double{
         while auxReceitas != saldoReceitas.endIndex{
             totalReceitas = totalReceitas + saldoReceitas[auxReceitas]
             auxReceitas += 1
         }
         print("\nTotal de Receitas: \(totalReceitas)")
+        return totalReceitas
         
     }
     
@@ -177,12 +179,13 @@ class Sistema {
     }
     var auxDespesas = 0
     var totalDespesas = 0.0
-    func calculoDespesas(){
+    func saldoTotalDespesas() -> Double {
         while auxDespesas != saldoDespesas.endIndex{
             totalDespesas = totalDespesas + saldoDespesas[auxDespesas]
             auxDespesas += 1
         }
         print("\nTotal de Despesas: \(totalDespesas)")
+        return totalDespesas
     }
     
     func ImprimirDespesas(){
@@ -213,11 +216,16 @@ class Sistema {
         exit(0)
     }
     
-//    func saldoFinal(){
-//        let calculoSaldoFinal
-//        print(calculoSaldoFinal)
-//        print("teste")
-//    }
+    var calculoSaldoFinal = 0.0
+    func imprimirSaldoFinal(){
+        let saldoReceitas = saldoTotalReceitas()
+        let saldoDespesas = saldoTotalDespesas()
+        
+        calculoSaldoFinal = saldoReceitas - saldoDespesas
+        
+        print("O Saldo final é: \(calculoSaldoFinal)")
+    }
+    
 }
 
 

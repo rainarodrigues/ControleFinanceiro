@@ -21,10 +21,8 @@ while(true){
 //            sistema.telaPrint()
 //            sistema.imprimirReceitas()
 //            sistema.imprimirSaldo()
-//            sistema.calculoReceitas()
-//            sistema.calculoDespesas()
-//            sistema.saldoFinal()
-        case 6:
+            sistema.imprimirSaldoFinal()
+                case 6:
             sistema.finalizarSistema()
         default:
             print("Programa encerrado!!")
