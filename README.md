@@ -19,7 +19,7 @@
 <!--      * [Combo](#combo)-->
 <!--   * [Tests](#testes)-->
 <!--   * [Tecnologias](#tecnologias)-->
-<!--<!--te-->-->
+<!--<!--te-->
 
 <h4 align="center"> 
     🚧  React Select 🚀 Em processo de construção...  🚧
@@ -89,6 +89,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Feito com ❤️ por Raina Rodrigues 👋🏽 Entre em contato!
 
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Linkedin Badge](https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/)](https://www.linkedin.com/in/rainarodrigues/)
 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
+[![Gmail Badge](https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/)](mailto:rainarodrigues@gmail.com)
