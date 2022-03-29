@@ -88,4 +88,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Raina Rodrigues 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/)](https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Raina-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/)](https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/) 
