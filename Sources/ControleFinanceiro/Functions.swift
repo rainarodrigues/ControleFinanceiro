@@ -186,10 +186,11 @@ class Sistema {
     }
     
     func imprimirMeta(){
-        if(meta >= calculoSaldoFinal){
-            print("\nParabéns você atingiu a meta 😀")
+        if(calculoSaldoFinal >= meta){
+            
+            print("\nO valor da sua meta foi \(meta). \nParabéns você atingiu a meta 😀")
         }else{
-            print("\nInfelizmente a meta não foi alcançada 😢")
+            print("\nO valor da sua meta foi \(meta). \n Infelizmente a meta não foi alcançada 😢")
         }
     }
     
