@@ -5,21 +5,21 @@
 <p aling="center">Para pessoas que desezam saber qual foi o saldo final de sua renda finceira e deseja saber se a meta foi ecedida ou não. </p>
  
  
-Tabela de conteúdos
-=================
-<!--ts-->
-   * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
-<!--te-->
+<!--Tabela de conteúdos-->
+<!--=================-->
+<!--<!--ts-->-->
+<!--   * [Sobre](# ControleFinanceiro)-->
+<!--   * [Tabela de Conteudo](#tabela-de-conteudo)-->
+<!--   * [Instalação](#instalacao)-->
+<!--   * [Como usar](#como-usar)-->
+<!--      * [Pre Requisitos](#pre-requisitos)-->
+<!--      * [Local files](#local-files)-->
+<!--      * [Remote files](#remote-files)-->
+<!--      * [Multiple files](#multiple-files)-->
+<!--      * [Combo](#combo)-->
+<!--   * [Tests](#testes)-->
+<!--   * [Tecnologias](#tecnologias)-->
+<!--<!--te-->-->
 
 <h4 align="center"> 
     🚧  React Select 🚀 Em processo de construção...  🚧
@@ -39,9 +39,9 @@ Tabela de conteúdos
 - [x] Consulta de Saldo Final
 - [x] Finalizar programa
 
-<h1 align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />
-</h1>
+<!--<h1 align="center">-->
+<!--  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />-->
+<!--</h1>-->
 
 ### Pré-requisitos
 
@@ -88,6 +88,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Raina Rodrigues 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/raina-rodrigues-de-lima-a49242191/) 
 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:rainarrodrigues@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/) 
+
+[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
