@@ -9,25 +9,15 @@ import Foundation
 
 class Sistema {
     
-    func telaPrint(){
-        print("\n \n--------------------------------------------")
-        print("------------  Controle Financeiro  ----------")
-        print("----------------------------------------------")
-    }
-    
-    func saldoPrint(){
-        print("\n \n--------------------------------------------")
-        print("----------  Saldo do Controle Finaceiro  --------")
-        print("----------------------------------------------")
-    }
     func menssageMenu(){
         print("---------------------------------------------")
-        print("------------  Controle Financeiro   ----------")
+        print("------------  Controle Financeiro   ---------")
         print("---------------------------------------------")
         print(" ▶︎ Menu Principal")
         print("---------------------------------------------")
-        print("\n1 - Saldo inicial\n2 - Receitas\n3 - Despesas\n4 - Metas\n5 - Saldos\n6 - Finalizar Sistema")
-        print("Digite o numero para acessar o menu: ")
+        print("\n▶️ 1 - Saldo inicial\n▶️ 2 - Receitas\n▶️ 3 - Despesas\n▶️ 4 - Metas\n▶️ 5 - Saldos\n▶️ 6 - Finalizar Sistema")
+        print("---------------------------------------------")
+        print("‼️ Digite o número para acessar o menu: ")
     }
 
     func verificarIntMenu() -> Int {
@@ -63,17 +53,15 @@ class Sistema {
     var saldo = 0.0
     
     func saldoInicial() {
-        telaPrint()
         print("Digite o saldo inicial: ")
         let saldoInicial = verificarDouble()
         
         saldo = saldoInicial
-        print("saldo inicial inserido foi: \(saldoInicial)")
-        print("\n")
+        print("\nsaldo inicial inserido foi: \(saldoInicial)")
     }
     
-    func imprimirSaldo() {
-        print("Saldo inicial :\(saldo)")
+    func imprimirSaldoInicial() {
+        print("\n ◆ Saldo inicial :\(saldo)")
     }
 
     //Receitas
@@ -85,27 +73,25 @@ class Sistema {
     func receitas(){
         
         while(true){
-            print("\n\n-----------------------------------")
-            print("Você quer adicionar uma despesa?")
-            print("Digite 1 para SIM e 2 para NÃO : ")
+            print("\n-----------------------------------")
+            print("Você quer adicionar uma receita❔")
+            print("‼️ Digite 1️⃣ para SIM e 2️⃣ para NÃO : ")
             print("-----------------------------------")
             let inputResposta = readLine()
             resposta = String(inputResposta!)
             
             if(resposta != "1" && resposta != "2"){
-                print("----------------------------------- \nVocê não digitou 1 nem 2.")
+                print("\n-----------------------------------\n")
+                print("‼️ Você não digitou 1 nem 2. ‼️")
             
             }else if (resposta == "2"){
                 break
             }else{
-                telaPrint()
-                print("\n\n-----------------------------------")
-                print("Digite o nome da receita: ")
+                print("\nDigite o nome da receita: ")
                 var nomeInputReceita = readLine()
                 nomeReceita.append(nomeInputReceita!)
                 
-                print("\n\n-----------------------------------")
-                print("Digite o valor da receita: ")
+                print("\nDigite o valor da receita: ")
                 var saldoInputReceita = verificarDouble()
                 saldoReceitas.append(saldoInputReceita)
                 //count += 1
@@ -122,14 +108,12 @@ class Sistema {
             totalReceitas = totalReceitas + saldoReceitas[auxReceitas]
             auxReceitas += 1
         }
-        print("\nTotal de Receitas: \(totalReceitas)")
         return totalReceitas
         
     }
     
     func imprimirReceitas(){
-        print("\n----------------------------")
-        print("----- Receitas : ------")
+        print("\n ◆ Receitas :")
         for (nomeReceita, saldoReceitas) in zip(nomeReceita, saldoReceitas) {
             print("\(nomeReceita) : \(saldoReceitas)")
         }
@@ -144,9 +128,9 @@ class Sistema {
     func despesas(){
 
         while(true){
-            print("\n\n-----------------------------------")
-            print("Você quer adicionar uma despesa?")
-            print("Digite 1 para SIM e 2 para NÃO : ")
+            print("\n-----------------------------------")
+            print("Você quer adicionar uma despesa❔")
+            print("‼️ Digite 1️⃣ para SIM e 2️⃣ para NÃO : ")
             print("-----------------------------------")
             let inputResposta = readLine()
             respostaDespesas = String(inputResposta!)
@@ -158,14 +142,11 @@ class Sistema {
             }else if (respostaDespesas == "2"){
                 break
             }else{
-                telaPrint()
-                print("\n\n-----------------------------------")
-                print("Digite o nome da despesa: ")
+                print("\nDigite o nome da despesa: ")
                 var nomeInputDespesas = readLine()
                 nomeDespesas.append(nomeInputDespesas!)
                 
-                print("\n\n-----------------------------------")
-                print("Digite o valor da despesa: ")
+                print("\nDigite o valor da despesa: ")
                 var saldoInputDespesas = verificarDouble()
                 saldoDespesas.append(saldoInputDespesas)
                 
@@ -184,17 +165,18 @@ class Sistema {
             totalDespesas = totalDespesas + saldoDespesas[auxDespesas]
             auxDespesas += 1
         }
-        print("\nTotal de Despesas: \(totalDespesas)")
         return totalDespesas
     }
     
     func ImprimirDespesas(){
-        print("\nTotal de Despesas: \(totalDespesas)")
+        print("\n ◆ Despesas :")
+        for (nomeDespesas, saldoDespesas) in zip(nomeDespesas, saldoDespesas) {
+            print("\(nomeDespesas) : \(saldoDespesas)")
+        }
     }
     
     var meta = 0.0
     func metasAtrituida(){
-        telaPrint()
         print("Digite o valor da sua meta: ")
         let inputMeta = verificarDouble()
         
@@ -203,13 +185,13 @@ class Sistema {
         print("\n")
     }
     
-//    func imprimirMeta(){
-//        if(meta >= ){
-//
-//        }else{
-//
-//        }
-//    }
+    func imprimirMeta(){
+        if(meta >= calculoSaldoFinal){
+            print("\nParabéns você atingiu a meta 😀")
+        }else{
+            print("\nInfelizmente a meta não foi alcançada 😢")
+        }
+    }
     
     func finalizarSistema(){
         print("\nSistema Finalizado!\n")
@@ -217,13 +199,13 @@ class Sistema {
     }
     
     var calculoSaldoFinal = 0.0
-    func imprimirSaldoFinal(){
+    func imprimirSaldoFinal() -> Double {
         let saldoReceitas = saldoTotalReceitas()
         let saldoDespesas = saldoTotalDespesas()
         
         calculoSaldoFinal = saldoReceitas - saldoDespesas
         
-        print("O Saldo final é: \(calculoSaldoFinal)")
+        return calculoSaldoFinal
     }
     
 }
